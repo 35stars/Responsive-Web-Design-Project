@@ -1,0 +1,313 @@
+/* GENERAL STYLE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  height: 70px;
+  margin: 0 auto 10vh;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 5vw;
+  display: inline-block;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.burger {
+  display: none;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 40px auto;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.hero-text {
+  width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  width: 180px;
+  height: 50px;
+  background-color: #222;
+  color: white;
+
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 550px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: 60px;
+}
+
+/* ABOUT SECTION */
+.about {
+  width: 100%;
+  max-width: 1200px;
+  height: 420px;
+  margin: 40px auto;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.about-image {
+  max-width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-text {
+  width: 550px;
+  margin-left: 70px;
+}
+
+.about-text h2 {
+  font-size: 42px;
+}
+
+.about-text p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* SKILLS SECTION */
+.skills {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 42px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  width: 220px;
+  height: 120px;
+  background-color: #222;
+  color: white;
+
+  font-size: 28px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTACT SECTION */
+.contact {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 42px;
+}
+
+.contact-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #eee;
+  padding: 30px;
+}
+
+.contact-box p {
+  font-size: 22px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #222;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-links li {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    height: auto;
+  }
+
+  .hero img {
+    margin: 15px auto;
+    width: 87%;
+  }
+
+  .about img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        height: auto;
+    }
+
+  .about-text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .skills-container {
+      margin: 30px auto;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .skill-card {
+        max-width: 300px;
+    }
+
+    .contact-box p {
+        font-size: 18px;
+    }
+
+}
